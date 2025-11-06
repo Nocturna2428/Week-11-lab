@@ -4,11 +4,11 @@ module D_Flip_Flop(
     output reg Q,
     output Qnot
     );
-    
+    initial begin
     always @(posedge C) begin
             Q <= D;
     end
     
     assign Qnot = ~Q;
-    
+    end 
 endmodule
